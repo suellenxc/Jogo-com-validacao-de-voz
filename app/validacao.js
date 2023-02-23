@@ -18,9 +18,9 @@ function verificaChute(chute){
         <button id='btn-reset' class='btn-reset'>RESET</button>
         `
 
-    }else if(numero < numeroSecreto){
+    }else if(!chuteInvalido & !numeroInvalido & numero < numeroSecreto){
         elementoChute.innerHTML += `<h2>O número secreto é maior <i class="fa-sharp fa-solid fa-arrow-up-long"></i></h2>`
-    }else{
+    }else if(!chuteInvalido & !numeroInvalido & numero > numeroSecreto){
         elementoChute.innerHTML += `<h2>O número secreto é menor <i class="fa-sharp fa-solid fa-arrow-down-long"></i></h2>`
     }
 }
