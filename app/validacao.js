@@ -3,7 +3,7 @@ function verificaChute(chute){
     const numero = +chute
 
     if(chuteInvalido(numero)){
-        elementoChute.innerHTML = `Você disse: ${chute}. Valor inválido!`
+        elementoChute.innerHTML = `Você disse: ${chute}.Valor inválido!`
     }
 
     if(numeroInvalido(numero)){
